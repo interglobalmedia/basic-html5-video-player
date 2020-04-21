@@ -1,0 +1,26 @@
+{
+  "name": "basic-video-player",
+  "version": "1.0.0",
+  "description": "A basic html5 video player",
+  "main": "index.js",
+  "scripts": {
+    "scss": "node-sass --watch styles/scss -o styles/css",
+    "clean": "rm -rf dist && mkdir dist",
+    "build": "cp -R scripts styles video dist/ & cp index.html",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/interglobalmedia/basic-html5-video-player.git"
+  },
+  "author": "Maria D. Campbell",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/interglobalmedia/basic-html5-video-player/issues"
+  },
+  "homepage": "https://github.com/interglobalmedia/basic-html5-video-player#readme",
+  "dependencies": {
+    "gh-pages": "^2.2.0",
+    "node-sass": "^4.13.1"
+  }
+}
